@@ -35,5 +35,4 @@ GET    /health
 - Uses in-memory storage (data resets on restart, as permitted by scope).
 - JWT implemented using HMAC SHA256 (no external libraries).
 - Passwords are hashed with SHA256 and salted.
-- The default JWT secret can be overridden with the `JWT_SECRET` environment variable.
 - Supported Ticket Status transitions strictly follow: `open -> in_progress -> closed`. A `closed` ticket cannot be reopened.

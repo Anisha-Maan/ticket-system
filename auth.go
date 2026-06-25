@@ -7,19 +7,10 @@ import (
 	"encoding/base64"
 	"encoding/json"
 	"errors"
-	"os"
 	"time"
 )
 
-var jwtSecret = getJWTSecret()
-
-func getJWTSecret() []byte {
-	secret := os.Getenv("JWT_SECRET")
-	if secret == "" {
-		return []byte("super-secret-key-change-me")
-	}
-	return []byte(secret)
-}
+var jwtSecret = []byte("super-secret-key-change-me")
 
 type Claims struct {
 	UserID int   `json:"user_id"`
