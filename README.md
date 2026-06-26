@@ -28,8 +28,8 @@ GET    /health
 
 ## Deployment URLs
 
-**Deployment URL:** `[INSERT_DEPLOYMENT_URL_HERE]`  
-**Public Health Check URL:** `[INSERT_DEPLOYMENT_URL_HERE]/health`
+**Deployment URL:** `[https://ticket-system-hbbp.onrender.com]`  
+**Public Health Check URL:** `https://ticket-system-hbbp.onrender.com/health`
 
 ## Assumptions & Notes
 - Uses in-memory storage (data resets on restart, as permitted by scope).
